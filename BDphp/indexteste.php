@@ -7,8 +7,10 @@
 </head>
 <body>
     <?php
-        mysqli_connect("localhost", "root", "", "progwebbd")
-            or die("Erro ao conectar. " . mysqli_error());
+     $conexao=mysqli_connect("localhost", "root", "", "progwebbd")
+         or die("Erro ao conectar. " . mysqli_error());
+     mysqli_query($conexão,"comando");
+    
     ?>
 </body>
 </html>
